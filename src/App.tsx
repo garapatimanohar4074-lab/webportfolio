@@ -339,6 +339,13 @@ const App = () => {
             <h2 className="hero-name-small max-w-[720px] text-[clamp(1.2rem,4.2vw,3.4rem)] mt-2 ml-4 sm:ml-6 sm:text-[clamp(2rem,5.8vw,4rem)] md:ml-10">Garapati Manohar</h2>
           </motion.div>
 
+          {/* Mobile Photo - shown only on mobile */}
+          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6, duration: 0.8 }} className="flex sm:hidden justify-center mt-6 mb-4">
+            <Magnet padding={150} strength={3}>
+              <DeveloperCenterpiece />
+            </Magnet>
+          </motion.div>
+
           <div className="mt-auto flex items-end justify-between px-6 pb-7 sm:px-8 sm:pb-8 md:px-10 md:pb-10">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.35, duration: 0.7 }} className="max-w-[220px] sm:max-w-[280px] md:max-w-[320px]">
               <p className="mb-3 text-[0.65rem] font-medium uppercase tracking-[0.35em] text-[#8C99A6] sm:text-[0.7rem]">
@@ -354,7 +361,7 @@ const App = () => {
             
           </div>
 
-          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6, duration: 0.8 }} className="flex justify-center sm:absolute sm:left-1/2 sm:top-1/2 z-10 sm:z-10 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:top-auto sm:bottom-0 sm:translate-y-0 sm:translate-x-[-50%]">
+          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6, duration: 0.8 }} className="hidden sm:flex sm:absolute sm:left-1/2 sm:top-1/2 z-10 sm:z-10 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:top-auto sm:bottom-0 sm:translate-y-0 sm:translate-x-[-50%]">
             <Magnet padding={150} strength={3}>
               <DeveloperCenterpiece />
             </Magnet>

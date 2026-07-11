@@ -317,7 +317,7 @@ const App = () => {
       <main className="bg-[#0C0C0C]">
         <motion.section ref={heroRef} id="hero" style={{ opacity: heroOpacity }} className="relative flex h-screen flex-col overflow-x-clip">
           <div className="hero-bg-wave absolute inset-0 -z-10" />
-          <nav className="flex justify-between px-6 pt-6 text-sm font-medium uppercase tracking-[0.3em] text-[#D7E2EA] md:px-10 md:pt-8 md:text-lg lg:text-[1.4rem]">
+          <nav className="flex justify-between px-4 pt-4 text-xs font-medium uppercase tracking-[0.2em] text-[#D7E2EA] sm:px-6 sm:pt-6 sm:text-sm md:px-10 md:pt-8 md:text-lg md:tracking-[0.3em] lg:text-[1.4rem]">
             {['About', 'Services', 'Projects', 'Contact'].map((item, index) => (
               <motion.a
                 key={item}
@@ -333,10 +333,10 @@ const App = () => {
           </nav>
 
           <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.15 }} className="mt-10 overflow-hidden sm:mt-12 md:mt-16 lg:mt-20">
-            <h1 className="hero-title max-w-[720px] text-[clamp(2.4rem,9vw,6.5rem)] leading-[0.95] sm:text-[clamp(3rem,10vw,8rem)] text-left ml-6 sm:ml-8 md:ml-10">
+            <h1 className="hero-title max-w-[720px] text-[clamp(1.8rem,7vw,6.5rem)] leading-[0.95] text-left ml-4 sm:ml-6 sm:text-[clamp(3rem,10vw,8rem)] md:ml-10">
               Hi I am
             </h1>
-            <h2 className="hero-name-small max-w-[720px] text-[clamp(1.6rem,5.2vw,3.4rem)] sm:text-[clamp(2rem,5.8vw,4rem)] mt-2 ml-6 sm:ml-8 md:ml-10">Garapati Manohar</h2>
+            <h2 className="hero-name-small max-w-[720px] text-[clamp(1.2rem,4.2vw,3.4rem)] mt-2 ml-4 sm:ml-6 sm:text-[clamp(2rem,5.8vw,4rem)] md:ml-10">Garapati Manohar</h2>
           </motion.div>
 
           <div className="mt-auto flex items-end justify-between px-6 pb-7 sm:px-8 sm:pb-8 md:px-10 md:pb-10">

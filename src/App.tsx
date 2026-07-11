@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import profileImage from '../assests/profile.jpg';
 // Starfield (3D background) removed per user request
 
 type Project = {
@@ -195,7 +196,7 @@ const DeveloperCenterpiece = () => {
       <div className="relative flex h-[280px] w-[280px] items-center justify-center overflow-hidden rounded-full border border-white/20 bg-[radial-gradient(circle_at_top_left,rgba(182,0,168,0.25),rgba(255,255,255,0.04)_45%,rgba(255,255,255,0.02)_100%)] shadow-[0_25px_90px_rgba(96,13,142,0.28)] backdrop-blur-xl sm:h-[320px] sm:w-[320px] md:h-[360px] md:w-[360px]">
         <div className="absolute inset-4 rounded-full border border-white/10" />
         <div className="absolute inset-10 rounded-full border border-white/10" />
-        <img src="/assests/profile.jpg" alt="Garapati Manohar" className="h-full w-full object-cover" />
+        <img src={profileImage} alt="Garapati Manohar" className="h-full w-full object-cover" />
       </div>
     </motion.div>
   );

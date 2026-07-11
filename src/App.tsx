@@ -313,7 +313,7 @@ const App = () => {
 
   return (
     <div className="min-h-screen overflow-x-clip bg-[#0C0C0C] text-[#D7E2EA]">
-      <div ref={cursorRef} className="custom-cursor" />
+      <div ref={cursorRef} className="custom-cursor hidden sm:block" />
       <main className="bg-[#0C0C0C]">
         <motion.section ref={heroRef} id="hero" style={{ opacity: heroOpacity }} className="relative flex h-screen flex-col overflow-x-clip">
           <div className="hero-bg-wave absolute inset-0 -z-10" />

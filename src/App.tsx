@@ -354,7 +354,7 @@ const App = () => {
             
           </div>
 
-          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6, duration: 0.8 }} className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 sm:top-auto sm:bottom-0 sm:translate-y-0 sm:translate-x-[-50%]">
+          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6, duration: 0.8 }} className="flex justify-center sm:absolute sm:left-1/2 sm:top-1/2 z-10 sm:z-10 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:top-auto sm:bottom-0 sm:translate-y-0 sm:translate-x-[-50%]">
             <Magnet padding={150} strength={3}>
               <DeveloperCenterpiece />
             </Magnet>

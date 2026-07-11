@@ -340,13 +340,13 @@ const App = () => {
           </motion.div>
 
           {/* Mobile Photo - shown only on mobile */}
-          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6, duration: 0.8 }} className="flex sm:hidden justify-center mt-6 mb-4">
+          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6, duration: 0.8 }} className="flex sm:hidden justify-center mt-6 mb-2">
             <Magnet padding={150} strength={3}>
               <DeveloperCenterpiece />
             </Magnet>
           </motion.div>
 
-          <div className="mt-auto flex items-end justify-between px-6 pb-7 sm:px-8 sm:pb-8 md:px-10 md:pb-10">
+          <div className="mt-2 sm:mt-auto flex items-end justify-between px-6 pb-7 sm:px-8 sm:pb-8 md:px-10 md:pb-10">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.35, duration: 0.7 }} className="max-w-[220px] sm:max-w-[280px] md:max-w-[320px]">
               <p className="mb-3 text-[0.65rem] font-medium uppercase tracking-[0.35em] text-[#8C99A6] sm:text-[0.7rem]">
                 <a href="https://nextgendevs.kadaliadithya123.workers.dev/" target="_blank" rel="noopener noreferrer" className="underline decoration-[#B600A8]/40 hover:text-white transition-colors">
